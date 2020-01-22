@@ -652,7 +652,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
 
                 //誘導経路の緯度経度を記録------------------------------------------------------------------------------------------------
-                //text = ("0" + "\t" + "目標経度" + "\t" + "目標緯度");
+                //text = ("0" + "\t" + "目標経度" + "\t" + "目標緯度");　　//これあるとめちゃずれてあとあとメンドイから消した
                 //bufferedWriter.write(text);
                 //bufferedWriter.newLine();
                 text = ("0" + "\t" + (String.format("%.7f",startLng)) + "\t" + (String.format("%.7f",startLat)));                                                                                //開始位置の緯度経度
@@ -670,7 +670,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 bufferedWriter.newLine();
 
                 //実際に歩いた(GPSによって得た)緯度経度を記録------------------------------------------------------------------------------------------------
-                //text = ("時間[ms]" + "\t" + "緯度" + "\t" + "経度");
+                //text = ("時間[ms]" + "\t" + "緯度" + "\t" + "経度");　　//これあるとめちゃずれてあとあとメンドイから消した
                 //bufferedWriter.write(text);
                 //bufferedWriter.newLine();
 
