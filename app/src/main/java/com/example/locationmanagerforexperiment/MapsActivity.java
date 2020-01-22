@@ -673,7 +673,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 //text = ("時間[ms]" + "\t" + "緯度" + "\t" + "経度");
                 //bufferedWriter.write(text);
                 //bufferedWriter.newLine();
-                
+
                 for (int storage_val2 = 0; storage_val2 < measure_val; storage_val2++) {
                     text = (time_count/1000 + "\t" + (String.format("%.7f",array1[storage_val2])) + "\t" + (String.format("%.7f",array2[storage_val2])));
                     bufferedWriter.write(text);
